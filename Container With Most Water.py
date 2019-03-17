@@ -1,4 +1,5 @@
 import sys
+#给一个数组，求max（min（list【i】，list【j】）*（i-j））
 def maxArea(height):
     i = 0
     j = len(height) - 1
@@ -17,7 +18,7 @@ if __name__=="__main__":
     height=sys.stdin.readline().strip()
     height=height.split(" ")
     height=[int(x)for x in height]
-    
+
     print(maxArea(height))
 
 
