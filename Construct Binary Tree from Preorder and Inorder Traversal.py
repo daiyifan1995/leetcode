@@ -32,13 +32,13 @@ class Solution:
 
         return root
 
-    def traversalTree(self,root,tree):#树的前序遍历
+    def preOrder(self,root,tree):#树的前序遍历
         if(root!=None):
             tree.append(root.val)
         if(root.left!=None):
-            self.traversalTree(root.left,tree)
+            self. preOrder(root.left,tree)
         if(root.right != None):
-            self.traversalTree(root.right,tree)
+            self. preOrder(root.right,tree)
         return tree
 
 if __name__ == "__main__":
