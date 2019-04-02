@@ -1,3 +1,7 @@
-a=dict()
-a[1]="2"
-print(a)
+def test(i):
+    i+1
+
+i=0
+print(i)
+test(i)
+print(i)
