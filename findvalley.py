@@ -15,4 +15,15 @@ while i< len(number):
         up=1
     if down==1 and up ==1:
         valley.append((i,number[i]))
+def findPeakElement(nums) :
+    if len(nums) == 0:
+        return -1
+    for i in range(1, len(nums) - 1):
+        if nums[i] > nums[i - 1] and nums[i] > nums[i + 1]:
+            return i
+
+    if nums[0] <= nums[-1]:
+        return len(nums) - 1
+    if nums[0] >=nums[-1]:
+        return 0
 

@@ -1,2 +1,7 @@
-a=[0,1,2]
-print(a.index(-1))
+st="abcd"
+def test(st):
+    st=st+st
+    print(st[0])
+
+test(st)
+print(st)
